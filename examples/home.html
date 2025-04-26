@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Generated</title>
+</head>
+<body>
+<div style='display:flex;flex-wrap:wrap;text-align:center;background-color:#f8f9fa;padding:20px'>
+  <img style='width:120px' src='logo.png' alt='公司 Logo'/>
+  <div style='display:flex;flex-wrap:wrap;gap:20px'>
+    <a href='#hero'>
+      首頁
+    </a>
+    <a href='#products'>
+      產品
+    </a>
+    <a href='#about'>
+      關於我們
+    </a>
+    <a href='#contact'>
+      聯絡
+    </a>
+  </div>
+</div>
+<div style='padding:60px;background-color:#e9ecef;text-align:center' id='hero'>
+  <h style='font-size:40px;font-weight:bold'>
+    打造極致體驗
+  </h>
+  <p style='font-size:18px;margin:20 0'>
+    我們提供創新技術與貼心服務，助您拓展無限商機。
+  </p>
+  <button style='padding:12 28;background-color:#007bff;color:white' onclick='scrollToSection()'>
+    立即開始
+  </button>
+</div>
+<div style='padding:50px' id='products'>
+  <h style='font-size:32px;text-align:center'>
+    產品特色
+  </h>
+  <div style='display:flex;flex-wrap:wrap;gap:30px;margin:40 0'>
+    <div >
+      <img style='width:100%' src='prod1.jpg' alt='產品一'/>
+      <p style='font-size:20px;margin:10 0'>
+        高效能平台
+      </p>
+      <p style='font-size:14px'>
+        全面加速工作流程，減少人為錯誤。
+      </p>
+      <button style='margin:10 0;background-color:#17a2b8;color:white' onclick='showProduct1()'>
+        了解詳情
+      </button>
+    </div>
+    <div >
+      <img style='width:100%' src='prod2.jpg' alt='產品二'/>
+      <p style='font-size:20px;margin:10 0'>
+        智慧分析
+      </p>
+      <p style='font-size:14px'>
+        即時數據儀表板，決策更精準。
+      </p>
+      <button style='margin:10 0;background-color:#17a2b8;color:white' onclick='showProduct2()'>
+        了解詳情
+      </button>
+    </div>
+    <div >
+      <img style='width:100%' src='prod3.jpg' alt='產品三'/>
+      <p style='font-size:20px;margin:10 0'>
+        雲端整合
+      </p>
+      <p style='font-size:14px'>
+        無縫連接多方系統，資料自動同步。
+      </p>
+      <button style='margin:10 0;background-color:#17a2b8;color:white' onclick='showProduct3()'>
+        了解詳情
+      </button>
+    </div>
+  </div>
+</div>
+<div style='padding:50px;background-color:#f8f9fa' id='about'>
+  <h style='font-size:32px;text-align:center'>
+    關於我們
+  </h>
+  <p style='font-size:16px;margin:20 0;text-align:center'>
+    我們是一群熱愛科技的工程師團隊，致力於打造友善且高效的解決方案。
+  </p>
+  <div style='display:flex;flex-wrap:wrap;gap:40px;margin:30 0'>
+    <div >
+      <img style='width:100px;height:100px' src='team1.jpg' alt='成員甲'/>
+      <p style='text-align:center'>
+        成員甲
+      </p>
+      <p style='font-size:14px;text-align:center'>
+        後端工程師
+      </p>
+    </div>
+    <div >
+      <img style='width:100px;height:100px' src='team2.jpg' alt='成員乙'/>
+      <p style='text-align:center'>
+        成員乙
+      </p>
+      <p style='font-size:14px;text-align:center'>
+        前端工程師
+      </p>
+    </div>
+    <div >
+      <img style='width:100px;height:100px' src='team3.jpg' alt='成員丙'/>
+      <p style='text-align:center'>
+        成員丙
+      </p>
+      <p style='font-size:14px;text-align:center'>
+        UX/UI 設計師
+      </p>
+    </div>
+  </div>
+</div>
+<div style='padding:50px' id='contact'>
+  <h style='font-size:32px;text-align:center'>
+    聯絡我們
+  </h>
+  <form action='sendContactForm' method='post'>
+    <div style='display:flex;flex-wrap:wrap;gap:20px;margin:20 0'>
+      <div >
+        <p >
+          姓名：
+        </p>
+        <input name='name' placeholder='您的大名'/>
+      </div>
+      <div >
+        <p >
+          Email：
+        </p>
+        <input type='email' name='email' placeholder='您的電子郵件'/>
+      </div>
+    </div>
+    <p >
+      訊息：
+    </p>
+    <input style='height:120px' type='textarea' name='message' placeholder='請輸入您的訊息'/>
+    <button style='margin:20 0;background-color:#28a745;color:white;padding:10 20'>
+      送出
+    </button>
+  </form>
+  <!-- If submitSuccess -->
+  <p style='color:green;margin:10 0'>
+    感謝您的聯絡，我們會儘快回覆！
+  </p>
+  <!-- End If -->
+  <!-- If submitError -->
+  <p style='color:red;margin:10 0'>
+    送出失敗，請稍後再試。
+  </p>
+  <!-- End If -->
+</div>
+<div style='padding:50px;background-color:#fff' id='blog'>
+  <h style='font-size:32px;text-align:center'>
+    最新文章
+  </h>
+  <div style='display:flex;flex-wrap:wrap;gap:30px;margin:30 0'>
+    <div >
+      <img style='width:100%' src='post1.jpg' alt='文章一'/>
+      <h style='font-size:20px;margin:10 0'>
+        提升團隊效能的五大秘訣
+      </h>
+      <p style='font-size:14px'>
+        探索如何利用自動化工具提升團隊協作效率。
+      </p>
+      <a style='margin:5 0' href='/blog/post1'>
+        閱讀更多
+      </a>
+    </div>
+    <div >
+      <img style='width:100%' src='post2.jpg' alt='文章二'/>
+      <h style='font-size:20px;margin:10 0'>
+        UX 設計新趨勢
+      </h>
+      <p style='font-size:14px'>
+        2025 年我們在 UX 領域觀察到的四大趨勢。
+      </p>
+      <a style='margin:5 0' href='/blog/post2'>
+        閱讀更多
+      </a>
+    </div>
+    <div >
+      <img style='width:100%' src='post3.jpg' alt='文章三'/>
+      <h style='font-size:20px;margin:10 0'>
+        雲端安全最佳實踐
+      </h>
+      <p style='font-size:14px'>
+        保護您的資料在雲端環境中仍然安全可靠。
+      </p>
+      <a style='margin:5 0' href='/blog/post3'>
+        閱讀更多
+      </a>
+    </div>
+  </div>
+</div>
+<div style='padding:20px;background-color:#343a40;color:#ffffff;text-align:center' id='footer'>
+  <p >
+    © 2025 公司名稱。保留一切權利。
+  </p>
+</div>
+</body>
+</html>

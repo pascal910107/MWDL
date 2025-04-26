@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Generated</title>
+</head>
+<body>
+<h >
+  用戶登入
+</h>
+<img style='width:80%' src='logo.png' alt='Logo'/>
+<form action='/login' method='post'>
+  <p >
+    用戶名：
+  </p>
+  <input name='username' placeholder='請輸入用戶名'/>
+  <p >
+    密碼：
+  </p>
+  <input type='password' name='password' placeholder='請輸入密碼'/>
+  <button >
+    登入
+  </button>
+</form>
+<!-- If loginError -->
+<p style='color:red'>
+  帳號或密碼錯誤！
+</p>
+<!-- End If -->
+<a href='/reset-password'>
+  忘記密碼？
+</a>
+</body>
+</html>

@@ -1,0 +1,17 @@
+Heading "用戶登入"
+
+Image { src: "logo.png", alt: "Logo", width: "80%" }
+
+Form { onSubmit: "/login" }:
+  Text "用戶名："
+  Input { name: "username", placeholder: "請輸入用戶名" }
+
+  Text "密碼："
+  Input { type: "password", name: "password", placeholder: "請輸入密碼" }
+
+  Button "登入"
+
+If loginError:
+  Text "帳號或密碼錯誤！" { color: red }
+
+Link "忘記密碼？" { href: "/reset-password" }
